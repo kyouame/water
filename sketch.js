@@ -82,4 +82,8 @@ function mousePressed() {
   if (dripSound && dripSound.isLoaded()) {
     dripSound.play();
   }
+  function touchStarted() {
+  mousePressed(); // 手機點一下也能觸發
+  return false;   // 避免手機雙重觸發
+    }
 }
